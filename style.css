@@ -1,0 +1,183 @@
+/* Reset de Estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+  border: 5px solid #ff5722;
+  
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+/* Seção de perfil */
+.profile-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* Estilo da imagem do perfil */
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid transparent; /* Borda transparente por padrão */
+  transition: border 0.4s ease, transform 0.4s ease; /* Transição suave para a borda e a transformação */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.profile-img:hover {
+  border: 5px solid #ff5722; /* Borda colorida ao passar o mouse */
+  transform: scale(1.05); /* Aumenta um pouco a imagem */
+}
+
+/* Seções com Setas */
+.seta-section {
+  margin-bottom: 20px;
+  border: 5px solid  #ff5722;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 35px;
+  
+
+}
+
+.seta {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Corrigido o justify-content */
+  transition: background-color 0.8s ease, color 0.8s ease, transform 0.8s ease;
+  border: 5px solid #ff5722;
+  font-size: 2rem;
+
+}
+
+.seta:hover {
+  background-color: #ff5722; /* Cor de fundo ao passar o mouse */
+  color: black; /* Cor do texto ao passar o mouse */
+  transform: scale(0.97); /* Um leve aumento ou diminuição para dar um efeito de destaque */
+}
+
+/* Ícone de seta */
+.toggle-icon {
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Transição mais suave para a rotação */
+  font-size: 20px;
+}
+
+/* Conteúdo das setas */
+.seta-content {
+  max-height: 0; /* Altura inicial quando escondido */
+  overflow: hidden; /* Esconde o conteúdo fora do limite de altura */
+  background-color: #f9f9f9;
+  padding: 0 2px; /* Inicialmente sem padding vertical */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: max-height 0.8s ease, padding 0.8s ease; /* Suaviza a transição de altura e padding */
+}
+
+.seta.open + .seta-content {
+  max-height: 500px; /* Um valor alto para garantir a abertura completa, ajuste conforme necessário */
+  padding: 30px; /* Aplica o padding quando aberto */
+}
+
+.links a{
+  color: #ff5722;
+  text-decoration: none;
+  }
+  
+  .links a:hover{
+    text-decoration: underline;
+  }
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: flex-start;
+  height: 170px; /* Define uma altura fixa de 100px */
+  padding: 10px 20px; /* Ajuste o padding para caber o conteúdo */
+  margin-top: 40px;
+  border-radius: 30px;
+  border: 5px solid #ff5722;
+}
+
+.desenvolvido-footer {
+  text-align: center;
+  color: #FFDB58;
+  font-size: 1.2rem;
+
+  
+}
+
+footer a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .seta {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .seta {
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
