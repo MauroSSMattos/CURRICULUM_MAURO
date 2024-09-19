@@ -93,7 +93,7 @@ h1 {
 /* Ícone de seta */
 .toggle-icon {
   margin-right: 10px;
-  transition: transform 0.3s ease; /* Transição mais suave para a rotação */
+  transition: transform 0.9s ease; /* Transição mais suave para a rotação */
   font-size: 20px;
 }
 
