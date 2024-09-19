@@ -35,8 +35,9 @@ h1 {
 
 /* Estilo da imagem do perfil */
 .profile-img {
-  width: 250px;
-  height: 250px;
+  
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid transparent; /* Borda transparente por padrão */
@@ -57,6 +58,7 @@ h1 {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 35px;
+  
   
 
 }
@@ -83,6 +85,11 @@ h1 {
   transform: scale(0.97); /* Um leve aumento ou diminuição para dar um efeito de destaque */
 }
 
+/* Justificar o texto dentro das setas */
+.seta-content p {
+  text-align: justify;
+}
+
 /* Ícone de seta */
 .toggle-icon {
   margin-right: 10px;
@@ -103,7 +110,9 @@ h1 {
 
 .seta.open + .seta-content {
   max-height: 500px; /* Um valor alto para garantir a abertura completa, ajuste conforme necessário */
-  padding: 30px; /* Aplica o padding quando aberto */
+  padding: 3px; /* Aplica o padding quando aberto */
+
+
 }
 
 .links a{
@@ -119,7 +128,7 @@ footer {
   background-color: #333;
   color: white;
   text-align: flex-start;
-  height: 170px; /* Define uma altura fixa de 100px */
+  height: 160px; /* Define uma altura fixa de 100px */
   padding: 10px 20px; /* Ajuste o padding para caber o conteúdo */
   margin-top: 40px;
   border-radius: 30px;
@@ -127,7 +136,7 @@ footer {
 }
 
 .desenvolvido-footer {
-  text-align: center;
+  text-align: flex-start;
   color: #FFDB58;
   font-size: 1.2rem;
 
