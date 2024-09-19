@@ -128,7 +128,7 @@ footer {
   background-color: #333;
   color: white;
   text-align: flex-start;
-  height: 140px; /* Define uma altura fixa de 100px */
+  height: 130px; /* Define uma altura fixa de 100px */
   padding: 5px 15px; /* Ajuste o padding para caber o conteúdo */
   margin-top: 40px;
   border-radius: 30px;
